@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/white"
+    >
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_birthday"
+        android:layout_marginLeft="@dimen/dis_font_home_image"
+        android:layout_marginTop="@dimen/dis_font_home_word"
+        android:layout_weight="0.05"
+        />
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Birthday"
+        android:textStyle="bold"
+        android:textSize="@dimen/size_name_price"
+        android:layout_marginLeft="@dimen/dis_font_home_word"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/dis_font_home_word"
+        android:layout_weight="0.9"
+        />
+    <TextView
+        android:id="@+id/txtSeeAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="See All >"
+        android:textStyle="bold"
+        android:textSize="@dimen/size_name_price"
+        android:layout_marginLeft="7dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/dis_font_home_word"
+        android:layout_weight="0.05"
+        />
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_RecyclerView"
+    android:background="@color/bg_home"
+    >
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/view_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dis_recycler_left"
+        >
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>
+
+</LinearLayout>
